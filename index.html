@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Pawan Kumavat</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Menna Tuallah Mohamed</span>
+          </h2>
+          <p class="text-muted">
+            I am a Mobile Application Developer and Flutter Specialist with 2 years of experience in building fully responsive and high-performance apps. Skilled in Flutter, Dart, and Firebase, I focus on creating user-friendly and scalable mobile solutions.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/me.gif" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Providing a Wide Range of Mobile Development Services <br />
+      
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/icons8-flutter-48.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Flutter App Development</h4>
+              <p class="text-muted">
+                Creating high-performance, cross-platform mobile applications with a seamless user experience.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/icons8-firebase-48.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Backend Integration              </h4>
+              <p class="text-muted">
+                Building and managing backend solutions using Firebase for secure and scalable applications.
+
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted">
+                Ensuring smooth performance by identifying and fixing bugs, enhancing app efficiency.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+<!-- Skill Section Starts -->
+<section class="skill mt-5 py-5" id="skills">
+  <div class="row justify-content-evenly">
+    <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-6">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress flutter">
+              <span class="progress-value flutter-progress">70%</span>
+            </div>
+            <br />
+            <span class="text">Flutter</span>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 mt-4 mt-md-0">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress dart">
+              <span class="progress-value dart-progress">75%</span>
+            </div>
+            <br />
+            <span class="text">Dart</span>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4">
+        <div class="col-10 col-md-6">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress firebase">
+              <span class="progress-value firebase-progress">80%</span>
+            </div>
+            <br />
+            <span class="text">Firebase</span>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 mt-4 mt-md-0">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress git">
+              <span class="progress-value git-progress">75%</span>
+            </div>
+            <br />
+            <span class="text">Git & GitHub</span>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4">
+        <div class="col-10 col-md-6">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress dsa">
+              <span class="progress-value dsa-progress">70%</span>
+            </div>
+            <br />
+            <span class="text">SQL</span>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 mt-4 mt-md-0">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress problem-solving">
+              <span class="progress-value problem-solving-progress">60%</span>
+            </div>
+            <br />
+            <span class="text">Problem-Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+      <div class="heading mt-5 mt-md-3">
+        <small>My Skills</small>
+        <h3>Creating Scalable & Efficient Mobile Apps</h3>
+        <p class="text-muted">
+          Passionate about developing high-quality mobile applications using Flutter, ensuring smooth user experience and seamless functionality.
+        </p>
+        <p class="text-muted">
+          Expertise in Firebase integration, state management, and problem-solving to deliver optimized solutions.
+        </p>
+        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skill Section Ends -->
+
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="Menna tuallah mohamed.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+   <!-- Portfolio Section Starts -->
+<section class="portfolio" id="portfolio">
+  <div class="heading text-center pt-5">
+    <small>Creative Work</small>
+    <h3>Check My Portfolio</h3>
+  </div>
+
+  <div id="myBtnContainer" class="text-center mt-4">
+    <button class="filter-item" data-filter="all">All</button>
+    <button class="filter-item" data-filter="mobile-app">Mobile App</button>
+  </div>
+
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+
+       <!-- AI Chat App -->
+       <div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/chat-ai.jpg" class="card-img-top" alt="AI Chat App" />
+          <div class="card-body text-center">
+            <h4 class="card-title">AI Chat App</h4>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">AI Integration</span>
+            <span class="badge bg-secondary mb-2">Mobile App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tunes App -->
+      <div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/chat (2).jpg" class="card-img-top" alt="Tunes App" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Chat App</h4>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">API Integration</span>
+            <span class="badge bg-secondary mb-2">Mobile App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book App -->
+      <div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/bookly.jpg" class="card-img-top" alt="Book App" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Book App</h4>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">Dart</span>
+            <span class="badge bg-secondary mb-2">Mobile App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-evenly mt-4 px-4">
+      
+      <!-- E-commerce App -->
+      <div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/ecommerce.jpg" class="card-img-top" alt="E-commerce App" />
+          <div class="card-body text-center">
+            <h4 class="card-title">E-commerce App</h4>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">Firebase</span>
+            <span class="badge bg-secondary mb-2">Mobile App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- To-Do List App -->
+      <div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/todo.jpg" class="card-img-top" alt="To-Do List App" />
+          <div class="card-body text-center">
+            <h4 class="card-title">To-Do List App</h4>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">Dart</span>
+            <span class="badge bg-secondary mb-2">Mobile App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fitness & Sport App -->
+      <div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/fitness.jpg" class="card-img-top" alt="Fitness & Sport App" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Fitness & Sport App</h4>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">Firebase</span>
+            <span class="badge bg-secondary mb-2">Mobile App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-evenly mt-4 px-4">
+      
+      <!-- MindBalance App -->
+<div class="post col-md-4 mobile-app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+  <div class="card">
+    <img src="images/mindbalance.jpg" class="card-img-top" alt="MindBalance App" />
+    <div class="card-body text-center">
+      <h4 class="card-title">MindBalance App</h4>
+      <span class="badge bg-secondary">Flutter</span>
+      <span class="badge bg-secondary">Firebase</span>
+      <span class="badge bg-secondary mb-2">Mobile App</span><br />
+      <a href="#" class="link">Read More</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio Section Ends -->
+
+    <!-- portfolio section ends here -->
+
+    <!-- Certifications Section Starts -->
+<section class="certifications mt-5 pt-5" id="certifications">
+  <div class="heading text-center">
+    <small>My Achievements</small>
+    <h3>Certifications & Training</h3>
+  </div>
+
+  <div class="row justify-content-evenly mt-4 px-4">
+    
+    <!-- Flutter Instant Training -->
+    <div class="col-md-5 col-10 mt-3" data-aos="fade-up">
+      <div class="card text-center">
+        <img src="images/flutter-instant.png" class="card-img-top" alt="Flutter Instant Training" />
+        <div class="card-body">
+          <h4 class="card-title">Flutter Instant Training</h4>
+          <p class="text-muted">Comprehensive Flutter training covering best practices.</p>
+          <a href="#" class="btn btn-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flutter with Firebase Course -->
+    <div class="col-md-5 col-10 mt-3" data-aos="fade-up">
+      <div class="card text-center">
+        <img src="images/instant.png" class="card-img-top" alt="Flutter with Firebase Course" />
+        <div class="card-body">
+          <h4 class="card-title">Flutter with Firebase</h4>
+          <p class="text-muted">Training on integrating Firebase with Flutter.</p>
+          <a href="#" class="btn btn-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-evenly mt-4 px-4">
+    
+    <!-- Complete Flutter & Dart Development -->
+    <div class="col-md-5 col-10 mt-3" data-aos="fade-up">
+      <div class="card text-center">
+        <img src="images/flutter-dart.png" class="card-img-top" alt="Complete Flutter & Dart Course" />
+        <div class="card-body">
+          <h4 class="card-title">Flutter & Dart Development</h4>
+          <p class="text-muted">Complete development course by Tharwat Samy.</p>
+          <a href="#" class="btn btn-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advanced Flutter (BLoC) -->
+    <div class="col-md-5 col-10 mt-3" data-aos="fade-up">
+      <div class="card text-center">
+        <img src="images/advanced-flutter.png" class="card-img-top" alt="Advanced Flutter (BLoC)" />
+        <div class="card-body">
+          <h4 class="card-title">Advanced Flutter (BLoC)</h4>
+          <p class="text-muted">State management with BLoC pattern by ALli hassan.</p>
+          <a href="#" class="btn btn-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-evenly mt-4 px-4">
+    
+    <!-- Flutter & Dart Programming Certification -->
+    <div class="col-md-5 col-10 mt-3" data-aos="fade-up">
+      <div class="card text-center">
+        <img src="images/dart-cert.png" class="card-img-top" alt="Flutter & Dart Certification" />
+        <div class="card-body">
+          <h4 class="card-title">Flutter & Dart Programming</h4>
+          <p class="text-muted">Programming certification by Tharwat Samy.</p>
+          <a href="#" class="btn btn-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Certifications Section Ends -->
+
+      <!-- About Section Starts -->
+<section class="about mt-5 pt-5" id="about">
+  <div class="container">
+    <div class="row justify-content-evenly align-items-center">
+      
+      <!-- Image Section -->
+      <div class="col-md-5 col-10 text-center" data-aos="fade-right">
+        <img src="images/menna.jpg" class="img-fluid rounded-4" alt="Menna Tuallah Mohamed">
+      </div>
+
+      <!-- Text Section -->
+      <div class="col-md-6 col-10" data-aos="fade-left">
+        <div class="heading">
+          <small>About Me</small>
+          <h3>Mobile Developer & Computer Science Student</h3>
+        </div>
+        <p class="text-muted">
+          I am a passionate <strong>Mobile Application Developer</strong> and a final-year 
+          <strong>Computer Science</strong> student at Arab Open University. 
+          I specialize in <strong>Flutter, Dart, Firebase</strong>, and cross-platform app development.
+        </p>
+        <p class="text-muted">
+          Throughout my academic journey, I have studied various computer science subjects that 
+          enhanced my problem-solving and development skills.
+        </p>
+
+        <!-- University Courses -->
+        <h5 class="mt-4">Key Subjects Studied:</h5>
+        <ul class="text-muted">
+          <li><strong>Data Structures & Algorithms</strong> - Efficient coding techniques</li>
+          <li><strong>Database Management</strong> - SQL, NoSQL & Firebase</li>
+          <li><strong>Object-Oriented Programming</strong> - Java & Python</li>
+          <li><strong>Software Engineering</strong> - Development lifecycle & best practices</li>
+          <li><strong>Operating Systems</strong> - Understanding system architecture</li>
+          <li><strong>Computer Networks</strong> - Protocols and security</li>
+          <li><strong>Mobile Development</strong> - Flutter & Dart expertise</li>
+        </ul>
+
+        
+        <!-- Resume Button -->
+        <a href="Menna tuallah mohamed.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- About Section Ends -->
+
+<!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Nasr City, Cairo, Egypt</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p> +20 101 044 7361</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>menna15sadek@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>https://github.com/MennaTuallahmohamed</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
